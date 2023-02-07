@@ -61,6 +61,7 @@ def encrypt(filename, key):
     # write the encrypted file
     with open(filename, "wb") as file:
         file.write(encrypted_data)
+    print("File encrypted successfully")
 
 
 def decrypt(filename, key):

@@ -28,6 +28,7 @@ def encrypt(filename, key):
     # write the encrypted file
     with open(filename, "wb") as file:
         file.write(encrypted_data)
+    print("File encrypted successfully")
 
 def decrypt(filename, key):
     """
@@ -42,6 +43,7 @@ def decrypt(filename, key):
     # write the original file
     with open(filename, "wb") as file:
         file.write(decrypted_data)
+    print("File decrypted successfully")
 
 
 if __name__ == "__main__":
